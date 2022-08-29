@@ -6,7 +6,7 @@ void PhoneBook::add(int i)
 	std::cout << "First name: ";
 	std::cin >> PhoneBook::list[i].first_name;
 	std::cout << "Last name: ";
-	std::cin >> PhoneBook::list[i].last_name;
+	std::cin >> PhoneBook::list[i].last_name >> std::noskipws;
 	std::cout << "Nickname: ";
 	std::cin >> PhoneBook::list[i].nickname;
 	std::cout << "Phone number: ";
